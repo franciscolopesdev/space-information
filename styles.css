@@ -1,0 +1,207 @@
+/* Importando a fonte do Google */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* Resetando o estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Barra de Navegação */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FF6347 !important;
+    background-color: rgba(255, 99, 71, 0.2);
+    border-radius: 5px;
+}
+
+/* Seção Hero */
+.hero-section {
+    background: url(imagens/espaco.png) no-repeat center;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-out;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+}
+
+/* Seções */
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Curiosidades */
+.curiosidades {
+    background: #1a1a1a;
+}
+
+/* Planetas */
+.planetas {
+    background: #111;
+}
+
+.planet-card {
+    margin-bottom: 30px;
+}
+
+.planet-card img {
+    border-radius: 10px;
+}
+
+.planetas .row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Galáxias */
+.galaxias {
+    background: #000;
+}
+
+/* Links */
+.links {
+    background: #000;
+    text-align: center;
+}
+
+.links .btn {
+    background: #FF6347;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.links .btn:hover {
+    background-color: #FF4500;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+/* Nova seção para notícias e missões */
+.news-card, .mission-card {
+    background: #222;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.news-card img, .mission-card img {
+    border-radius: 10px;
+    max-height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.news-card:hover, .mission-card:hover {
+    transform: scale(1.05);
+}
+
+.news-card h4, .mission-card h4 {
+    font-size: 1.5rem;
+    color: #FF6347;
+}
+
+.news-card p, .mission-card p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.links .btn {
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .news-card, .mission-card {
+        margin-bottom: 20px;
+    }
+
+    .news-card img, .mission-card img {
+        max-height: 200px;
+    }
+}
+

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando o Universo | NASA</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- AOS - Animate On Scroll -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+     <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Explorando o Universo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#curiosidades">Curiosidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#planetas">Planetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galaxias">Galáxias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#noticias">Notícias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tecnologia">Tecnologia Espacial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#links">Saiba Mais</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero - Imagem Grande -->
+    <header class="hero-section" data-aos="fade-up">
+        <div class="container text-center">
+            <h1>Explorando o Universo</h1>
+            <p>Junte-se à jornada para explorar os mistérios do espaço!</p>
+        </div>
+    </header>
+
+    <!-- Seção Curiosidades -->
+    <section class="curiosidades" id="curiosidades" data-aos="fade-up">
+        <div class="container text-center">
+            <h2>Curiosidades do Espaço</h2>
+            <img src="imagens/astronauta.png" alt="Curiosidades" class="img-fluid mb-4"
+                style="border-radius: 20px 5px 20px 5px;">
+
+            <p>Você sabia que o universo está se expandindo a uma taxa acelerada? Vamos explorar essas e outras
+                curiosidades.</p>
+            <ul>
+                <li>O universo tem mais de 13 bilhões de anos.</li>
+                <li>Existem mais de 100 bilhões de galáxias no universo observável.</li>
+                <li>O buraco negro supermassivo no centro da Via Láctea é chamado de Sagitário A.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Seção Planetas -->
+    <section class="planetas" id="planetas" data-aos="fade-up">
+        <div class="container text-center">
+            <h2>Os Planetas do Sistema Solar</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="planet-card">
+                        <img src="planetas/marte.png" class="img-fluid" alt="Marte" style="padding: 10px;">
+                        <h4>Marte</h4>
+                        <p>Marte é conhecido como o "Planeta Vermelho". Uma possível casa para futuras missões espaciais!</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="planet-card">
+                        <img src="planetas/venus.png" class="img-fluid" alt="Vênus" style="padding: 10px;">
+                        <h4>Vênus</h4>
+                        <p>Vênus é o planeta mais quente do nosso sistema solar, com temperaturas superiores a 460°C.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="planet-card">
+                        <img src="planetas/jupiter.png" class="img-fluid" alt="Júpiter" style="padding: 10px;">
+                        <h4>Júpiter</h4>
+                        <p>O maior planeta do nosso sistema solar, Júpiter é conhecido pela sua Grande Mancha Vermelha.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="planet-card">
+                        <img src="planetas/mercurio.png" class="img-fluid" alt="Mercúrio" style="padding: 10px;">
+                        <h4>Mercúrio</h4>
+                        <p>Mercúrio tem temperaturas extremamente variáveis, com dias muito quentes e noites congelantes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="planet-card">
+                        <img src="planetas/planeta-terra.png" class="img-fluid" alt="Terra" style="padding: 10px;">
+                        <h4>Terra</h4>
+                        <p>A Terra é o único planeta conhecido até agora com água em estado líquido e vida.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="planet-card">
+                        <img src="planetas/saturno.png" class="img-fluid" alt="Saturno" style="padding: 10px;">
+                        <h4>Saturno</h4>
+                        <p>Saturno é famoso pelos seus imponentes anéis, que são compostos principalmente de gelo e rochas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="planet-card">
+                        <img src="planetas/urano.png" class="img-fluid" alt="Urano" style="padding: 10px;">
+                        <h4>Urano</h4>
+                        <p>Urano é o único planeta que gira de lado, causando estações extremas e longas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="planet-card">
+                        <img src="planetas/netuno.png" class="img-fluid" alt="Netuno" style="padding: 10px;">
+                        <h4>Netuno</h4>
+                        <p>Netuno tem os ventos mais rápidos do Sistema Solar, podendo alcançar até 2.100 km/h.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="noticias" id="noticias" data-aos="fade-up">
+        <div class="container text-center">
+            <h2>Últimas Notícias sobre o Espaço</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="news-card">
+                        <h4>Missão para Marte Em 2025</h4>
+                        <p>NASA confirma nova missão para Marte, focando na exploração de água subterrânea no planeta
+                            vermelho.</p>
+                        <a href="https://www.nasa.gov/press-release/nasa-announces-new-mars-mission-in-2025"
+                            target="_blank" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-card">
+                        <h4>Lançamento de Satélite de Observação</h4>
+                        <p>O novo satélite da NASA irá ajudar a monitorar mudanças climáticas em tempo real.</p>
+                        <a href="https://www.nasa.gov/press-release/nasa-launches-new-satellite-to-monitor-climate-change"
+                            target="_blank" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-card">
+                        <h4>Descoberta de Buraco Negro Supermassivo</h4>
+                        <p>Pesquisadores da NASA anunciam a descoberta de um novo buraco negro supermassivo.</p>
+                        <a href="https://www.nasa.gov/press-release/nasa-discovers-new-supermassive-black-hole"
+                            target="_blank" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Nova notícia -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="news-card">
+                        <h4>Exploração da Via Láctea</h4>
+                        <p>A NASA está conduzindo novas missões para estudar a estrutura e evolução da nossa galáxia.
+                        </p>
+                        <a href="https://www.nasa.gov/mission_pages/hubble/news/hubble-galaxy-discovery.html"
+                            target="_blank" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-card">
+                        <h4>Telescópio James Webb Revela Novas Imagens</h4>
+                        <p>O telescópio James Webb capturou imagens inéditas de exoplanetas e galáxias distantes.</p>
+                        <a href="https://www.nasa.gov/press-release/nasa-webb-telescope-first-images" target="_blank"
+                            class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-card">
+                        <h4>Missão Artemis para a Lua</h4>
+                        <p>A missão Artemis da NASA visa levar a primeira mulher e o próximo homem à Lua até 2025.</p>
+                        <a href="https://www.nasa.gov/specials/artemis/" target="_blank" class="btn btn-primary">Leia
+                            mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Seção Missões Espaciais -->
+    <section class="missoes" id="missoes" data-aos="fade-up">
+        <div class="container text-center">
+            <h2>Missões Espaciais</h2>
+            <p>A NASA e outras agências espaciais têm várias missões de exploração ativas e futuras. Conheça algumas
+                delas:</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mission-card">
+                        <h4>Perseverance - Marte</h4>
+                        <p>A missão Perseverance da NASA está explorando o solo de Marte em busca de sinais de vida
+                            antiga.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mission-card">
+                        <h4>James Webb Space Telescope</h4>
+                        <p>O telescópio Webb será o maior e mais poderoso telescópio espacial, permitindo observar as
+                            primeiras galáxias.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Tecnologia Espacial -->
+    <section class="tecnologia" id="tecnologia" data-aos="fade-up">
+        <div class="container text-center">
+            <h2>Tecnologia Espacial</h2>
+            <p>A tecnologia espacial é fundamental para explorar o cosmos. Veja algumas inovações recentes:</p>
+            <ul>
+                <li>Propulsão de íons: uma tecnologia avançada para navegação em longas distâncias no espaço.</li>
+                <li>Rovers: veículos autônomos que exploram a superfície de planetas e luas.</li>
+                <li>Inteligência Artificial: usada para gerenciar dados e operações em missões espaciais complexas.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Links e Recursos -->
+    <section class="links" id="links" data-aos="fade-up">
+        <div class="container text-center">
+            <h2>Saiba Mais</h2>
+            <a href="https://www.nasa.gov" target="_blank" class="btn btn-primary mb-2">Visite a NASA</a>
+            <a href="https://www.space.com" target="_blank" class="btn btn-secondary">Space.com</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
